@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agric Economics App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+    <main>
+        <header class="home-header">
+        <h1>Agric Economics App</h1>
+        <form id="logout-form">
+            <button type="submit">Logout</button>
+        </form>
+    </header>
+        <section class="intro">
+            <p>Welcome to the Agric Economics App! This tool is designed to assist farmers and agricultural proffessionals in managing their crop data and perform economic analysis with ease. By entering your crop details, you can get valuable insights into the costs, yiels and potential profits of your farming
+                operations 
+            </p>
+            <h2>Features </h2>
+            <ul>
+                <li><strong>Data Entry:</strong>Easily input your crop data including crop name, area, cost, projected yield and market price</li>
+                <li><strong>Economic Analysis:</strong>Get detailed economic analysis to understand your potential revenue and profit.</li>
+                <li><strong>User-Friendly Interface:</strong>Simple and intuitive interface to make data entry and analysis quick and easy.</li>
+                <li><strong>Secure Data Storage</strong>Your data is securely stored and managed.</li>
+            </ul>
+                <h2>How to Use</h2>
+                <p>To get started fill the form below with your crop information. Once submitted, the app will provide you with a detailed analysis of your crop's economic performance. You can view the analysis in the <span>Economic Analysis </span>section </p>
+        </section>
+        <section class="crop-form">
+    <form id="crop-form">
+        <h2>Enter your data below</h2>
+        <label for="crop_name">Crop Name:</label>
+        <input type="text" id="crop_name" name="crop_name" required><br>
+        <label for="area">Area(Acres): </label>
+        <input type="number" id="area" name="area" required><br>
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" required><br>
+        <label for="projected_yield">Projected Yield: (/kg)</label>
+        <input type="number" id="projected_yield" name="projected_yield" required><br>
+        <label for="market_price">Market price:</label>
+        <input type="number" id="market_price" name="market_price" required><br>
+        <button type="submit">Add crop</button>
+    </form>
+</section>
+<section class="analysis">
+    <h2>Economic Analysis</h2>
+    <div id="analysis" class="analysis">
+<!--Analysis will be generated here dynamically-->
+    </div>
+    
+  <footer class="footer">
+<p>More Features coming soon!</p>
+&copy; 2024 | All rights Reserved | mantained by Wellington
+  </footer>
+    <script src="script.js"></script>
+</section>
+</main>
+</body>
+</html>
