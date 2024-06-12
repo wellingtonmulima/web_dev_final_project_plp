@@ -8,14 +8,14 @@ const dotenv = require("dotenv");
 const { reject } = require("lodash");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 dotenv.config();
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user:'root',
-    password:'Willy1997!',
-    database:'agric_econapp'
+    host: process.env.DB_HOST,
+    user:process.env.DB_USER,
+    password:process.env.PASSWORD,
+    database:process.env.DB_DATABASE
 });
 
 db.connect((err) =>{
